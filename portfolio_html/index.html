@@ -3,15 +3,54 @@
 <html>
 <head>
     <title>Jacob Valero</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: auto;
+        }
+
+        @font-face{
+            font-family: Open-sans;
+            src: url(C:\Users\matth\Downloads\misc\Open-Sans);
+        }
+
+        #title{
+            margin-top: 0;
+            text-align: center;
+            padding: 80px;
+            background-color: rgb(0, 123, 147);
+            color: white;
+        }
+
+        #links{
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+    </style>
 </head>
 
 <body>
-    <h1>Hi! I'm Jacob Valero</h1>
-    <p>I'm currently a student at Haverford College majoring in 
-    Computer Science and minoring in Psychology and Neuroscience. Creating is what gets me excited and I'm
-    always learning how to make new things. Take a look around and get in touch! </p>
-    <img src="file:///C:/Users/matth/Pictures/profile.png" alt="" />
+    <h1 id="title">Jacob Valero</h1>
+    
+    <div class="navbar" id="links">
+        <br><a href="#">Resume</a>
+        <a href="#">Projects</a>
+        <a href="#">Github</a>
+        <a href="#">Linkedin</a>
+        <a href="#" class="right">Misc.</a>
+    </div>
+
+    <p id="intro">
+        Hi, I'm Jacob Valero. I'm currently a student at Haverford College majoring in
+        Computer Science and minoring in Psychology and Neuroscience. <br>
+        Creating is what gets me excited and I'm
+        always learning how to make new things. Take a look around and get in touch!
+    </p>
 </body>
 </html>
 
 <!--C:\Users\matth\Documents\CodingProjects\portfolio\portfolio_html\index.html-->
+<!--<img src="file:///C:/Users/matth/Pictures/profile.png" alt="Picture of me holding a longboard I made" width="200"/>-->
