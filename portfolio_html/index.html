@@ -2,55 +2,105 @@
 
 <html>
 <head>
-    <title>Jacob Valero</title>
+    <title>Jacob Valero | Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Display favicons with a random little pixel art of projects-->
+    <link rel="icon" type="image/png" href="file:///C:/Users/matth/Pictures/profile.png" />
     <style>
         body {
             margin: auto;
         }
 
-        @font-face{
+        /*Doesn't work rn*/
+        @font-face {
             font-family: Open-sans;
             src: url(C:\Users\matth\Downloads\misc\Open-Sans);
         }
 
-        #title{
+        #header {
             margin-top: 0;
             text-align: center;
-            padding: 80px;
+            padding: 60px;
             background-color: rgb(0, 123, 147);
             color: white;
         }
 
-        #links{
-            text-align: center;
-            display: flex;
-            justify-content: space-evenly;
+        #header h1{
+            margin-bottom: -12px;
         }
 
+        #links {
+            overflow: hidden;
+            background-color: lightblue;
+            margin-top: -22px;
+            display: flex;
+            justify-content: center;
+        }
+
+            #links a {
+                padding: 18px 20px;
+                color: black;
+                text-decoration: none;
+                text-align: center;
+                font-size: 18px;
+            }
+
+                #links a:hover {
+                    background-color: floralwhite;
+                }
+
+        #intro {
+            text-align: center;
+            line-height: 2;
+            font-size: 16px;
+        }
     </style>
+    <script>
+        /* Not working rn*/
+        var img1 = <img src="file:///C:/Users/matth/Pictures/profile.png" alt="Picture of me holding a longboard I made" width="200" />;
+        var img2 = <img src="file:///C:/Users/matth/Pictures/scene.png" alt="Picture of scene" width="200" />;
+        var imgArr = [img1, img2];
+
+        function getRandImg() {
+            var randNum = Math.floor(Math.random() * imgArr.length);
+            var randImg = imgArr[randNum];
+            document.write(randImg);
+        }
+    </script>
 </head>
 
 <body>
-    <h1 id="title">Jacob Valero</h1>
-    
-    <div class="navbar" id="links">
-        <br><a href="#">Resume</a>
+    <div id="header">
+        <h1>Jacob Valero</h1>
+        <p>jvalero@haverford.edu</p>
+    </div>
+
+    <div id="links">
+        <br><a href="C:\Users\matth\Documents\CodingProjects\portfolio\portfolio_html\index.html">About</a>
+        <a href="C:\Users\matth\Documents\CodingProjects\portfolio\portfolio_html\resume.html">Resume</a>
+        <a href="https://github.com/Orelavant">Github</a>
+        <a href="#">LinkedIn</a>
         <a href="#">Projects</a>
-        <a href="#">Github</a>
-        <a href="#">Linkedin</a>
-        <a href="#" class="right">Misc.</a>
+        <a href="#">Extras</a>
     </div>
 
     <p id="intro">
         Hi, I'm Jacob Valero. I'm currently a student at Haverford College majoring in
         Computer Science and minoring in Psychology and Neuroscience. <br>
-        Creating is what gets me excited and I'm
-        always learning how to make new things. Take a look around and get in touch!
+        I'm always learning how to make new things. Take a look around and get in touch!
     </p>
+
+    <!-- Here you can put a random project on display.
+        Here's a test with a random img array, but you could also put in webGl projects
+        Not working ATM-->
+
+    <img id="demo" />;
+
+    <script>document.getElementById("demo").innerHTML = getRandImg();</script>
+
+
 </body>
 </html>
 
 <!--C:\Users\matth\Documents\CodingProjects\portfolio\portfolio_html\index.html-->
-<!--<img src="file:///C:/Users/matth/Pictures/profile.png" alt="Picture of me holding a longboard I made" width="200"/>-->
