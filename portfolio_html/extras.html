@@ -5,10 +5,75 @@
     <title>Jacob Valero | Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: auto;
+        }
+
+        /*Doesn't work rn*/
+        @font-face {
+            font-family: Open-sans;
+            src: url(C:\Users\matth\Downloads\misc\Open-Sans);
+        }
+
+        #header {
+            margin-top: 0;
+            text-align: center;
+            padding: 40px;
+            background-color: rgb(0, 123, 147);
+            color: white;
+        }
+
+            #header h1 {
+                margin-bottom: -12px;
+            }
+
+        #links {
+            overflow: hidden;
+            background-color: lightblue;
+            margin-top: -22px;
+            display: flex;
+            justify-content: center;
+        }
+
+            #links a {
+                padding: 18px 20px;
+                color: black;
+                text-decoration: none;
+                text-align: center;
+                font-size: 18px;
+            }
+
+                #links a:hover {
+                    background-color: floralwhite;
+                }
+        
+        #projectLinks {
+            margin-left: 12px;
+            line-height: 2;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
+    <div id="header">
+        <h1>Jacob Valero</h1>
+        <p>jvalero@haverford.edu</p>
+    </div>
 
-    
+    <div id="links">
+        <br><a href="C:\Users\matth\Documents\CodingProjects\portfolio\portfolio_html\index.html">About</a>
+        <a href="C:\Users\matth\Documents\CodingProjects\portfolio\portfolio_html\resume.html">Resume</a>
+        <a href="https://github.com/Orelavant" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/jacob-valero-b0426b183/" target="_blank">LinkedIn</a>
+        <a href="C:\Users\matth\Documents\CodingProjects\portfolio\portfolio_html\projects.html">Projects</a>
+        <a href="C:\Users\matth\Documents\CodingProjects\portfolio\portfolio_html\extras.html">Extras</a>
+    </div>
 
+    <div id="projectLinks">
+        <a href="https://orelavant.itch.io/" target="_blank">Games</a> <br />
+        <p> Physical Projects: WIP</p>
+    </div>
 </body>
 </html>
