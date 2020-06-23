@@ -55,19 +55,12 @@
             line-height: 2;
             font-size: 16px;
         }
-    </style>
-    <script>
-        /* Not working rn*/
-        var img1 = <img src="file:///C:/Users/matth/Pictures/profile.png" alt="Picture of me holding a longboard I made" width="200" />;
-        var img2 = <img src="file:///C:/Users/matth/Pictures/scene.png" alt="Picture of scene" width="200" />;
-        var imgArr = [img1, img2];
 
-        function getRandImg() {
-            var randNum = Math.floor(Math.random() * imgArr.length);
-            var randImg = imgArr[randNum];
-            document.write(randImg);
+        #randImg{
+            text-align: center;
+            padding: 20px;
         }
-    </script>
+    </style>
 </head>
 
 <body>
@@ -91,13 +84,27 @@
         I'm always learning how to make new things. Take a look around and get in touch!
     </p>
 
-    <!-- Here you can put a random project on display.
-        Here's a test with a random img array, but you could also put in webGl projects
-        Not working ATM-->
+    <div id="randImg
+        <img id="pic" src="" width="250">
+    </div>
 
-    <img id="demo" />;
+    <!--Going to table this feature until website is hosted. It will essentially work the same way as the rand img selector atm-->
+    <!--<iframe src="C:\Users\matth\Documents\UnityProjects\MiniJam56GameRepo\MiniJam56Game\Builds\0.2" style="border:0px #000000 none;"
+            name="project" scrolling="no" frameborder="1" height="1280px" width="720px"></iframe>-->
 
-    <script>document.getElementById("demo").innerHTML = getRandImg();</script>
+    <script>
+        var img1 = "file:///C:/Users/matth/Pictures/profile.png"
+        var img2 = "file:///C:/Users/matth/Pictures/scene.png"
+        var imgArr = [img1, img2];
+
+        //Not optimal implementation, would prefer to have src set randomly automatically.
+        function getRandImg() {
+            var randNum = Math.floor(Math.random() * imgArr.length);
+            document.getElementById("pic").src = imgArr[randNum];
+        }
+
+        getRandImg();
+    </script>
 
 
 </body>
