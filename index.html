@@ -53,12 +53,21 @@
         #intro {
             line-height: 2;
             font-size: 16px;
+            margin: 12px 12px;
         }
 
             #intro .column {
                 float: left;
-                width: 50%;
             }
+            
+                .left {
+                    width: 30%;
+                }
+
+                .right {
+                    margin-top: -12px;
+                    width: 60%;
+                }
 
         #intro::after {
             content: "";
@@ -88,18 +97,18 @@
     </div>
 
     <div id="intro">
-        <div class="column">
-            <img src="media/profile.jpg" width="200" />
+        <div class="column left">
+            <img src="media/profile.jpg" width="400" />
         </div>
 
-        <div class="column">
+        <div class="column right">
             <p>
                 Hi, I'm Jacob Valero. I'm currently a student at Haverford College majoring in
-                Computer Science and minoring in Psychology and Neuroscience. <br />
+                Computer Science and minoring in Psychology and Neuroscience.
                 I'm always looking for more opportunities to hone my skills as a computer scientist while applying what I've learned so far. <br />
                 I'm currently a research assistant at the Visual Perception and Spatial Cognition Laboratory
                 at the University of Utah, completing work such as working with perception and cognition tasks
-                coded in C# and performing statistical analysis on the resultant data. <br />
+                coded in C# and performing statistical analysis on the resultant data.
             </p>
         </div>
     </div>
