@@ -12,11 +12,11 @@
             margin: auto;
         }
 
-        /*Doesn't work rn*/
+        /*Doesn't work rn
         @font-face {
             font-family: Open-sans;
             src: url(C:\Users\matth\Downloads\misc\Open-Sans);
-        }
+        */
 
         #header {
             margin-top: 0;
@@ -74,7 +74,14 @@
             clear: both;
         }
 
-        @media screen and (max-width:800px) {
+        @media screen and (max-width:475px) {
+            #header {
+                display: block;
+            }
+            #links {
+                display: inline-flex;
+                flex-wrap:nowrap;
+            }
             .left, .right {
                 width:100%;
             }
@@ -91,7 +98,7 @@
     <div id="links">
         <br><a href="index.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
+        <a href="test.html">Resume</a>
         <a href="https://github.com/Orelavant" target="_blank">Github</a>
         <a href="https://www.linkedin.com/in/jacob-valero-b0426b183/" target="_blank">LinkedIn</a>
     </div>

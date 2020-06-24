@@ -18,13 +18,9 @@
             color: white;
         }
 
-        #header h1{
-            margin-bottom: -12px;
-        }
-
-        #resume{
-            text-align:center;
-        }
+            #header h1 {
+                margin-bottom: -12px;
+            }
 
         #links {
             background-color: lightblue;
@@ -45,10 +41,35 @@
                     background-color: floralwhite;
                 }
 
+        #resume {
+            text-align: center;
+        }
+
+        #resumeLink {
+            display: none;
+        }
+
+        @media screen and (max-width:475px) {
+            #header {
+                display: block;
+            }
+
+            #links {
+                display: inline-flex;
+                flex-wrap: nowrap;
+            }
+
+            #resumeEmbed {
+                display: none;
+            }
+
+            #resumeLink {
+                display: inline-block;
+            }
+        }
     </style>
 </head>
 <body>
-
     <div id="header">
         <h1>Jacob Valero</h1>
         <p>jvalero@haverford.edu</p>
@@ -57,17 +78,14 @@
     <div id="links">
         <br><a href="index.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
+        <a href="test.html">Resume</a>
         <a href="https://github.com/Orelavant" target="_blank">Github</a>
         <a href="https://www.linkedin.com/in/jacob-valero-b0426b183/" target="_blank">LinkedIn</a>
     </div>
 
     <p id="resume">
-        <embed src="media/resumePDF2020.pdf" width="800px" height="800px">
-            <br /><a href="media/resumePDF2020.pdf"> Backup Download Link </a>
-        </embed>
+        <embed id="resumeEmbed" src="media/resumePDF2020.pdf" width="800" height="800" />
+        <a id="resumeLink" href="media/resumePDF2020.pdf"> Backup Download Link </a>
     </p>
-
-
 </body>
 </html>
