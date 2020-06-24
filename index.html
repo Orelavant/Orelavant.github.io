@@ -50,14 +50,20 @@
                     background-color: floralwhite;
                 }
 
-        #profile {
-            text-align: left;
-        }
-
         #intro {
-            text-align: right;
             line-height: 2;
             font-size: 16px;
+        }
+
+            #intro .column {
+                float: left;
+                width: 50%;
+            }
+
+        #intro::after {
+            content: "";
+            display: table;
+            clear: both;
         }
 
         #randImg {
@@ -81,21 +87,23 @@
         <a href="projects.html">Projects</a>
     </div>
 
-    <div id="profile">
-        <img src="media/profile.jpg" width="200" />
-    </div>
-    
     <div id="intro">
-        <p>
-            Hi, I'm Jacob Valero. I'm currently a student at Haverford College majoring in
-            Computer Science and minoring in Psychology and Neuroscience. <br />
-            I'm always looking for more opportunities to hone my skills as a computer scientist while applying what I've learned so far. <br />
-            I'm currently a research assistant at the Visual Perception and Spatial Cognition Laboratory
-            at the University of Utah, completing work such as working with perception and cognition tasks
-            coded in C# and performing statistical analysis on the resultant data. <br />
-        </p>
+        <div class="column">
+            <img src="media/profile.jpg" width="200" />
+        </div>
+
+        <div class="column">
+            <p>
+                Hi, I'm Jacob Valero. I'm currently a student at Haverford College majoring in
+                Computer Science and minoring in Psychology and Neuroscience. <br />
+                I'm always looking for more opportunities to hone my skills as a computer scientist while applying what I've learned so far. <br />
+                I'm currently a research assistant at the Visual Perception and Spatial Cognition Laboratory
+                at the University of Utah, completing work such as working with perception and cognition tasks
+                coded in C# and performing statistical analysis on the resultant data. <br />
+            </p>
+        </div>
     </div>
-    
+
 
     <!-- See comment below, this was to set it up.
     <div id="randImg">
@@ -105,7 +113,7 @@
     <!--Going to table this feature until website is hosted. It will essentially work the same way as the rand img selector atm-->
     <!--<iframe src="C:\Users\matth\Documents\UnityProjects\MiniJam56GameRepo\MiniJam56Game\Builds\0.2" style="border:0px #000000 none;"
             name="project" scrolling="no" frameborder="1" height="1280px" width="720px"></iframe>-->
-
+    <!--
     <script>
         var img1 = "C:/Users/matth/Pictures/websitePictures/plane.png"
         var img2 = "C:/Users/matth/Pictures/websitePictures/playerFront1.0.png"
@@ -119,6 +127,7 @@
 
         getRandImg();
     </script>
+    -->
 
 
 </body>
