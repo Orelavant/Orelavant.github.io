@@ -74,16 +74,15 @@
             clear: both;
         }
 
-        @media screen and (max-width:600px) {
-            #header {
-                display: block;
+        @media screen and (max-width:800px) {
+            .left, .right {
+                width: 100%;
             }
+        }
+        @media screen and (max-width:500px) {
             #links {
                 display: inline-flex;
-                flex-wrap:nowrap;
-            }
-            .left, .right {
-                width:100%;
+                flex-wrap: nowrap;
             }
         }
     </style>
@@ -105,7 +104,7 @@
 
     <div id="intro">
         <div class="column left">
-            <img src="media/profile.jpg" width="300" style="max-width:100%"/>
+            <img src="media/profile.jpg" alt="Picture of me" width="300" style="max-width:100%"/>
         </div>
 
         <div class="column right">

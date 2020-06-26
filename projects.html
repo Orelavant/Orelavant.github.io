@@ -50,18 +50,42 @@
                 }
 
         #projects {
-            text-align: center;
             line-height: 2;
-            font-size: 16px;
         }
 
-        @media screen and (max-width:600px) {
-            #header {
-                display: block;
+            #projects .column {
+                float: left;
+                }
+            
+                    .left {
+                        display: block;
+                        padding: 12px;
+                        width: 28%;
+                    }
+
+                    .right {
+                        padding-left: 12px;
+                        margin-top: -12px;
+                        width: 50%;
+                    }
+
+                        .right #KAD {
+                            height: 250px;
+                        }
+
+                        .right #DB {
+                            height: 250px;
+                        }
+
+        @media screen and (max-width:800px) {
+            .column{
+                width: 100%;
             }
+        }
+        @media screen and (max-width:500px) {
             #links {
                 display: inline-flex;
-                flex-wrap:nowrap;
+                flex-wrap: nowrap;
             }
         }
     </style>
@@ -81,9 +105,17 @@
     </div>
 
     <div id="projects">
-        <p>
-            WIP
-        </p>
+        <div class="column left">
+            <img src="media/kruskal.gif" alt="GIF of my application, Kruskal's Algorithm Demo" width="400" />
+            <br /><img src="media/doughnut.gif" alt="GIF of my game, Doughnut Bomber" width="400" />
+            <br /><img src="media/shrimply.gif" alt="GIF of my game, Shrimply Beautiful" width="400" />
+
+        </div>
+        <div class="column right">
+            <p id="KAD">Kruskal's Algorithm Demo (Work in Progress) (June 2020-Present)</p>
+            <p id="DB">Doughnut Bomber (June 2020)</p>
+            <p id="SB">Shrimply Beautiful (May 2020)</p>
+        </div>
     </div>
     
 </body>
